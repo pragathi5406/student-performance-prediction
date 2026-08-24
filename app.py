@@ -18,7 +18,7 @@ st.title(" AI Student Performance System")
 model = pickle.load(open("models/student_model.pkl","rb"))
 
 
-client = Groq(api_key="your api key")
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 # Sidebar
 st.sidebar.title("Navigation")
